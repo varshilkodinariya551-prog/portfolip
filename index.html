@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Varshil - Software Engineer | Portfolio showcasing full-stack development, system design, and cloud architecture projects.">
+    <meta name="keywords" content="Software Engineer, Full Stack Developer, Laravel, PHP, React, Portfolio, Varshil Kodinariya">
+    <meta name="author" content="Varshil Kodinariya">
+    <title>Varshil Kodinariya | Software Engineer</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Background Effects -->
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#hero" class="nav-logo">Portfolio</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="active">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="dot"></span>
+                    Available for opportunities
+                </div>
+                <h1>
+                    Hi, I'm <span class="gradient-text">Varshil</span>
+                </h1>
+                <div class="subtitle">
+                    <span class="typing-wrapper">
+                        <span class="typing-text" data-words='["Software Engineer", "Full Stack Developer", "System Architect", "Problem Solver"]'></span>
+                        <span class="cursor"></span>
+                    </span>
+                </div>
+                <p>I craft elegant, scalable software solutions that solve real-world problems. Passionate about clean code, system design, and building products that make a difference.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i> View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-envelope"></i> Get In Touch
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span class="number counter" data-target="20">0+</span>
+                        <span class="label">Projects</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="number counter" data-target="5">0+</span>
+                        <span class="label">Years Experience</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="number counter" data-target="19">0+</span>
+                        <span class="label">Technologies</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-float">
+            <div class="float-shape"></div>
+            <div class="float-shape"></div>
+            <div class="float-shape"></div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="label">// My Work</span>
+                <h2>Featured <span class="text-gradient">Projects</span></h2>
+                <p>A selection of projects that showcase my expertise in building scalable, modern applications.</p>
+            </div>
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card reveal">
+                    <div class="project-card-image">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>E-Commerce Platform</h3>
+                        <p>A full-stack e-commerce platform with payment integration, inventory management, and real-time order tracking.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Laravel</span>
+                            <span class="project-tag">Vue.js</span>
+                            <span class="project-tag">MySQL</span>
+                            <span class="project-tag">Redis</span>
+                            <span class="project-tag">Stripe API</span>
+                            <span class="project-tag">Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/varshil" target="_blank"><i class="fab fa-github"></i> Code</a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card reveal">
+                    <div class="project-card-image">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Task Management System</h3>
+                        <p>A collaborative project management tool with real-time updates, Kanban boards, and team analytics.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">PostgreSQL</span>
+                            <span class="project-tag">Socket.io</span>
+                            <span class="project-tag">AWS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/varshil" target="_blank"><i class="fab fa-github"></i> Code</a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card reveal">
+                    <div class="project-card-image">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>AI Content Generator</h3>
+                        <p>An AI-powered content generation tool leveraging GPT APIs for blog posts, social media, and marketing copy.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">FastAPI</span>
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">OpenAI API</span>
+                            <span class="project-tag">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/varshil" target="_blank"><i class="fab fa-github"></i> Code</a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card reveal">
+                    <div class="project-card-image">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Real-Time Chat Application</h3>
+                        <p>A modern messaging platform with end-to-end encryption, file sharing, and video calling capabilities.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Next.js</span>
+                            <span class="project-tag">TypeScript</span>
+                            <span class="project-tag">Socket.io</span>
+                            <span class="project-tag">WebRTC</span>
+                            <span class="project-tag">Redis</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/varshil" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card reveal">
+                    <div class="project-card-image">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>DevOps Dashboard</h3>
+                        <p>A centralized monitoring dashboard for CI/CD pipelines, server health, and deployment management.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Go</span>
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Grafana</span>
+                            <span class="project-tag">Docker</span>
+                            <span class="project-tag">Kubernetes</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/varshil" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card reveal">
+                    <div class="project-card-image">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Portfolio CMS</h3>
+                        <p>A customizable portfolio content management system built for developers and designers.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Laravel</span>
+                            <span class="project-tag">Alpine.js</span>
+                            <span class="project-tag">Tailwind CSS</span>
+                            <span class="project-tag">SQLite</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/varshil" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="label">// My Skills</span>
+                <h2>Tech <span class="text-gradient">Stack</span></h2>
+                <p>Technologies and tools I use to bring ideas to life.</p>
+            </div>
+            <div class="skills-categories">
+
+                <!-- Backend -->
+                <div class="skill-category reveal">
+                    <h3>
+                        <span class="icon"><i class="fas fa-server"></i></span>
+                        Backend
+                    </h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="name"><i class="fab fa-php"></i> PHP</span>
+                            <span class="percentage">95%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-width="95"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="name"><i class="fab fa-laravel"></i> Laravel</span>
+                            <span class="percentage">92%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-width="92"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="name"><i class="fab fa-python"></i> Python</span>
+                            <span class="percentage">85%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-width="85"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="name"><i class="fab fa-node-js"></i> Node.js</span>
+                            <span class="percentage">88%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-width="88"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="name"><i class="fas fa-code"></i> Go</span>
+                            <span class="percentage">70%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-width="70"></div></div>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="skill-category reveal">
+                    <h3>
+                        <span class="icon"><i class="fas fa-palette"></i></span>
+                        Frontend
+                    </h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="name"><i class="fab fa-js"></i> JavaScript</span>
+                            <span class="percentage">93%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-width="93"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="name"><i class="fab fa-react"></i> React</span>
+                            <span class="percentage">88%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-width="88"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="name"><i class="fab fa-vuejs"></i> Vue.js</span>
+                            <span class="percentage">90%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-width="90"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="name"><i class="fas fa-code"></i> TypeScript</span>
+                            <span class="percentage">85%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-width="85"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="name"><i class="fab fa-html5"></i> HTML/CSS</span>
+                            <span class="percentage">97%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-width="97"></div></div>
+                    </div>
+                </div>
+
+                <!-- DevOps -->
+                <div class="skill-category reveal">
+                    <h3>
+                        <span class="icon"><i class="fas fa-cloud"></i></span>
+                        DevOps
+                    </h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="name"><i class="fab fa-docker"></i> Docker</span>
+                            <span class="percentage">82%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-width="82"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="name"><i class="fab fa-aws"></i> AWS</span>
+                            <span class="percentage">78%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-width="78"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="name"><i class="fab fa-git-alt"></i> Git</span>
+                            <span class="percentage">95%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-width="95"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="name"><i class="fab fa-linux"></i> Linux</span>
+                            <span class="percentage">85%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-width="85"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="name"><i class="fas fa-sync-alt"></i> CI/CD</span>
+                            <span class="percentage">80%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-width="80"></div></div>
+                    </div>
+                </div>
+
+                <!-- Database -->
+                <div class="skill-category reveal">
+                    <h3>
+                        <span class="icon"><i class="fas fa-database"></i></span>
+                        Database
+                    </h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="name"><i class="fas fa-database"></i> MySQL</span>
+                            <span class="percentage">90%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-width="90"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="name"><i class="fas fa-database"></i> PostgreSQL</span>
+                            <span class="percentage">85%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-width="85"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="name"><i class="fas fa-database"></i> MongoDB</span>
+                            <span class="percentage">80%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-width="80"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="name"><i class="fas fa-database"></i> Redis</span>
+                            <span class="percentage">82%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-width="82"></div></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="label">// About Me</span>
+                <h2>Who <span class="text-gradient">I Am</span></h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <p>I'm a passionate Software Engineer with expertise in full-stack development, system design, and cloud architecture. With years of experience building scalable applications, I specialize in creating robust, maintainable solutions using modern technologies. I love tackling complex challenges and turning ideas into reality through clean, efficient code.</p>
+                </div>
+                <div class="reveal">
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="info">
+                                <div class="label">Location</div>
+                                <div class="value">India</div>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <div class="icon"><i class="fas fa-envelope"></i></div>
+                            <div class="info">
+                                <div class="label">Email</div>
+                                <div class="value">varshilkodinariya551@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="label">// Get In Touch</span>
+                <h2>Let's <span class="text-gradient">Connect</span></h2>
+                <p>Have a project in mind or want to collaborate? Feel free to reach out!</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <h3>Let's work together</h3>
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Drop me a message!</p>
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <div class="icon"><i class="fas fa-envelope"></i></div>
+                            <div class="info">
+                                <div class="label">Email</div>
+                                <div class="value">varshilkodinariya551@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="info">
+                                <div class="label">Location</div>
+                                <div class="value">India</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/varshil" target="_blank" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/varshil" target="_blank" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com/varshil" target="_blank" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form reveal">
+                    <div id="form-success" class="alert alert-success" style="display: none;">
+                        <i class="fas fa-check-circle"></i> Thank you for your message! I'll get back to you soon.
+                    </div>
+                    <form action="https://formspree.io/f/xplaceholder" method="POST" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-control" placeholder="Project Discussion" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" class="form-control" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Varshil. Built with <i class="fas fa-heart" style="color: var(--accent-pink);"></i> & Laravel</p>
+            <div class="footer-links">
+                <a href="https://github.com/varshil" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://linkedin.com/in/varshil" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="mailto:varshilkodinariya551@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
