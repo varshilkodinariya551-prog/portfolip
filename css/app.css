@@ -1668,3 +1668,328 @@ textarea.form-control {
 .mt-4 { margin-top: 32px; }
 .text-center { text-align: center; }
 .text-muted { color: var(--text-muted); }
+
+/* ============================================
+   Scroll Progress Bar
+   ============================================ */
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: var(--gradient-primary);
+    z-index: 9999;
+    width: 0%;
+    transition: width 0.1s linear;
+    box-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+}
+
+/* ============================================
+   Particle Canvas
+   ============================================ */
+#particleCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* ============================================
+   Glow Cursor
+   ============================================ */
+.glow-cursor {
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.06) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s;
+}
+
+/* ============================================
+   Card Shine Effect (3D Tilt)
+   ============================================ */
+.card-shine {
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    z-index: 1;
+    transition: background 0.2s;
+}
+
+.project-card {
+    transform-style: preserve-3d;
+    will-change: transform;
+}
+
+/* ============================================
+   Animated Gradient Border on Hover
+   ============================================ */
+.project-card::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    background: linear-gradient(135deg, var(--accent-violet), var(--accent-cyan), var(--accent-pink), var(--accent-violet));
+    background-size: 300% 300%;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    animation: borderGlow 4s ease-in-out infinite;
+}
+
+.project-card:hover::before {
+    opacity: 1;
+}
+
+@keyframes borderGlow {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+/* ============================================
+   Skill Category Mouse-Follow Glow
+   ============================================ */
+.skill-category {
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-category::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.12) 0%, transparent 70%);
+    top: var(--mouse-y, 50%);
+    left: var(--mouse-x, 50%);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.skill-category:hover::before {
+    opacity: 1;
+}
+
+/* ============================================
+   Enhanced Reveal Animations
+   ============================================ */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Specific reveal variants */
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-60px);
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-left.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.reveal-right {
+    opacity: 0;
+    transform: translateX(60px);
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-right.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.reveal-scale {
+    opacity: 0;
+    transform: scale(0.85);
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-scale.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* ============================================
+   Enhanced Social Links
+   ============================================ */
+.social-link {
+    position: relative;
+    overflow: hidden;
+    will-change: transform;
+}
+
+.social-link::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--gradient-primary);
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: inherit;
+}
+
+.social-link:hover::before {
+    opacity: 1;
+}
+
+.social-link:hover {
+    border-color: transparent !important;
+    color: white !important;
+    -webkit-text-fill-color: white;
+}
+
+.social-link i {
+    position: relative;
+    z-index: 1;
+}
+
+/* ============================================
+   Floating Shapes Enhanced
+   ============================================ */
+.float-shape {
+    will-change: transform;
+    transition: none;
+}
+
+.float-shape::after {
+    content: '</>';
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-mono);
+    font-size: 2rem;
+    color: rgba(139, 92, 246, 0.1);
+    font-weight: 700;
+}
+
+/* ============================================
+   Project Card Image Hover
+   ============================================ */
+.project-card-image i {
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.project-card:hover .project-card-image i {
+    transform: scale(1.2) rotate(5deg);
+    color: var(--accent-violet);
+}
+
+/* ============================================
+   Tag Hover Animation
+   ============================================ */
+.project-tag {
+    transition: all 0.3s ease;
+}
+
+.project-tag:hover {
+    background: rgba(139, 92, 246, 0.25);
+    border-color: var(--accent-violet);
+    transform: translateY(-2px);
+}
+
+/* ============================================
+   Hero Badge Shimmer
+   ============================================ */
+.hero-badge {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-badge::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.06), transparent);
+    animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+/* ============================================
+   Contact Form Enhanced
+   ============================================ */
+.form-control:focus {
+    border-color: var(--accent-violet) !important;
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1), 0 0 20px rgba(139, 92, 246, 0.05) !important;
+}
+
+/* ============================================
+   Footer Social Links Animation
+   ============================================ */
+.footer-links a {
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--gradient-primary);
+    transition: width 0.3s ease;
+}
+
+.footer-links a:hover::after {
+    width: 100%;
+}
+
+/* ============================================
+   Section Label Hover (Scramble Effect)
+   ============================================ */
+.section-header .label {
+    cursor: default;
+    transition: color 0.3s;
+}
+
+.section-header .label:hover {
+    color: var(--accent-cyan);
+}
+
+/* ============================================
+   Responsive - Disable heavy effects on mobile
+   ============================================ */
+@media (max-width: 768px) {
+    .glow-cursor {
+        display: none;
+    }
+
+    #particleCanvas {
+        opacity: 0.5;
+    }
+
+    .project-card {
+        transform: none !important;
+    }
+}
+

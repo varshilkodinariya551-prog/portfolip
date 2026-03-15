@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Particle Canvas -->
+    <canvas id="particleCanvas"></canvas>
+
     <!-- Background Effects -->
     <div class="bg-grid"></div>
     <div class="bg-glow bg-glow-1"></div>
@@ -48,7 +54,7 @@
                 </h1>
                 <div class="subtitle">
                     <span class="typing-wrapper">
-                        <span class="typing-text" data-words='["Software Engineer", "Full Stack Developer", "System Architect", "Problem Solver"]'></span>
+                        <span class="typing-text" data-words='["Software Engineer", "Full Stack Developer", "Android Developer", "React Native Developer"]'></span>
                         <span class="cursor"></span>
                     </span>
                 </div>
@@ -63,7 +69,7 @@
                 </div>
                 <div class="hero-stats">
                     <div class="hero-stat">
-                        <span class="number counter" data-target="20">0+</span>
+                        <span class="number counter" data-target="10">0+</span>
                         <span class="label">Projects</span>
                     </div>
                     <div class="hero-stat">
@@ -71,7 +77,7 @@
                         <span class="label">Years Experience</span>
                     </div>
                     <div class="hero-stat">
-                        <span class="number counter" data-target="19">0+</span>
+                        <span class="number counter" data-target="15">0+</span>
                         <span class="label">Technologies</span>
                     </div>
                 </div>
@@ -94,131 +100,88 @@
             </div>
             <div class="projects-grid">
 
-                <!-- Project 1 -->
+                <!-- Project 1: Hospital Management System -->
                 <div class="project-card reveal">
+                    <div class="card-shine"></div>
+                    <div class="project-card-image">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Hospital Management System</h3>
+                        <p>A comprehensive hospital and patient management system with appointment scheduling, patient records, doctor management, billing, and reporting modules.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">PHP</span>
+                            <span class="project-tag">Laravel</span>
+                            <span class="project-tag">MySQL</span>
+                            <span class="project-tag">Bootstrap</span>
+                            <span class="project-tag">jQuery</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/varshilkodinariya551-prog/HPMS" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Movie Booking System -->
+                <div class="project-card reveal">
+                    <div class="card-shine"></div>
+                    <div class="project-card-image">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Movie Booking System</h3>
+                        <p>An online movie ticket booking platform with seat selection, showtime management, payment integration, and user booking history.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">MongoDB</span>
+                            <span class="project-tag">Express</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/varshil2005/Movie-Booking" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Ecommerce Application -->
+                <div class="project-card reveal">
+                    <div class="card-shine"></div>
+                    <div class="project-card-image">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Ecommerce Application</h3>
+                        <p>A full-featured ecommerce mobile application with admin dashboard, product management, order tracking, and user authentication.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React Native</span>
+                            <span class="project-tag">Firebase</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/varshil2005/ecommerceAdminvarshil" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Ecommerce Website -->
+                <div class="project-card reveal">
+                    <div class="card-shine"></div>
                     <div class="project-card-image">
                         <i class="fas fa-shopping-cart"></i>
                     </div>
                     <div class="project-card-body">
-                        <h3>E-Commerce Platform</h3>
-                        <p>A full-stack e-commerce platform with payment integration, inventory management, and real-time order tracking.</p>
+                        <h3>Ecommerce Website</h3>
+                        <p>A responsive ecommerce web platform with product catalog, shopping cart, checkout flow, user accounts, and inventory management.</p>
                         <div class="project-tags">
                             <span class="project-tag">Laravel</span>
                             <span class="project-tag">Vue.js</span>
                             <span class="project-tag">MySQL</span>
-                            <span class="project-tag">Redis</span>
-                            <span class="project-tag">Stripe API</span>
-                            <span class="project-tag">Docker</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/varshil" target="_blank"><i class="fab fa-github"></i> Code</a>
-                            <a href="#"><i class="fas fa-external-link-alt"></i> Live</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card reveal">
-                    <div class="project-card-image">
-                        <i class="fas fa-tasks"></i>
-                    </div>
-                    <div class="project-card-body">
-                        <h3>Task Management System</h3>
-                        <p>A collaborative project management tool with real-time updates, Kanban boards, and team analytics.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">React</span>
-                            <span class="project-tag">Node.js</span>
-                            <span class="project-tag">PostgreSQL</span>
-                            <span class="project-tag">Socket.io</span>
-                            <span class="project-tag">AWS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/varshil" target="_blank"><i class="fab fa-github"></i> Code</a>
-                            <a href="#"><i class="fas fa-external-link-alt"></i> Live</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card reveal">
-                    <div class="project-card-image">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <div class="project-card-body">
-                        <h3>AI Content Generator</h3>
-                        <p>An AI-powered content generation tool leveraging GPT APIs for blog posts, social media, and marketing copy.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">Python</span>
-                            <span class="project-tag">FastAPI</span>
-                            <span class="project-tag">React</span>
-                            <span class="project-tag">OpenAI API</span>
-                            <span class="project-tag">MongoDB</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/varshil" target="_blank"><i class="fab fa-github"></i> Code</a>
-                            <a href="#"><i class="fas fa-external-link-alt"></i> Live</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="project-card reveal">
-                    <div class="project-card-image">
-                        <i class="fas fa-comments"></i>
-                    </div>
-                    <div class="project-card-body">
-                        <h3>Real-Time Chat Application</h3>
-                        <p>A modern messaging platform with end-to-end encryption, file sharing, and video calling capabilities.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">Next.js</span>
-                            <span class="project-tag">TypeScript</span>
-                            <span class="project-tag">Socket.io</span>
-                            <span class="project-tag">WebRTC</span>
-                            <span class="project-tag">Redis</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/varshil" target="_blank"><i class="fab fa-github"></i> Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 5 -->
-                <div class="project-card reveal">
-                    <div class="project-card-image">
-                        <i class="fas fa-server"></i>
-                    </div>
-                    <div class="project-card-body">
-                        <h3>DevOps Dashboard</h3>
-                        <p>A centralized monitoring dashboard for CI/CD pipelines, server health, and deployment management.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">Go</span>
-                            <span class="project-tag">React</span>
-                            <span class="project-tag">Grafana</span>
-                            <span class="project-tag">Docker</span>
-                            <span class="project-tag">Kubernetes</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/varshil" target="_blank"><i class="fab fa-github"></i> Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 6 -->
-                <div class="project-card reveal">
-                    <div class="project-card-image">
-                        <i class="fas fa-palette"></i>
-                    </div>
-                    <div class="project-card-body">
-                        <h3>Portfolio CMS</h3>
-                        <p>A customizable portfolio content management system built for developers and designers.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">Laravel</span>
-                            <span class="project-tag">Alpine.js</span>
                             <span class="project-tag">Tailwind CSS</span>
-                            <span class="project-tag">SQLite</span>
+                            <span class="project-tag">Stripe</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/varshil" target="_blank"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://github.com/varshilkodinariya551-prog" target="_blank"><i class="fab fa-github"></i> Code</a>
                         </div>
                     </div>
                 </div>
@@ -309,17 +272,46 @@
                     </div>
                     <div class="skill-item">
                         <div class="skill-info">
-                            <span class="name"><i class="fas fa-code"></i> TypeScript</span>
+                            <span class="name"><i class="fab fa-html5"></i> HTML/CSS</span>
+                            <span class="percentage">97%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-width="97"></div></div>
+                    </div>
+                </div>
+
+                <!-- Mobile -->
+                <div class="skill-category reveal">
+                    <h3>
+                        <span class="icon"><i class="fas fa-mobile-alt"></i></span>
+                        Mobile
+                    </h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="name"><i class="fab fa-react"></i> React Native</span>
                             <span class="percentage">85%</span>
                         </div>
                         <div class="skill-bar"><div class="skill-bar-fill" data-width="85"></div></div>
                     </div>
                     <div class="skill-item">
                         <div class="skill-info">
-                            <span class="name"><i class="fab fa-html5"></i> HTML/CSS</span>
-                            <span class="percentage">97%</span>
+                            <span class="name"><i class="fab fa-android"></i> Android</span>
+                            <span class="percentage">80%</span>
                         </div>
-                        <div class="skill-bar"><div class="skill-bar-fill" data-width="97"></div></div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-width="80"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="name"><i class="fab fa-java"></i> Java</span>
+                            <span class="percentage">82%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-width="82"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="name"><i class="fas fa-fire"></i> Firebase</span>
+                            <span class="percentage">78%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-width="78"></div></div>
                     </div>
                 </div>
 
@@ -468,8 +460,8 @@
                         </div>
                     </div>
                     <div class="social-links">
-                        <a href="https://github.com/varshil" target="_blank" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="https://linkedin.com/in/varshil" target="_blank" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/varshilkodinariya551-prog" target="_blank" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/varshilkodinariya" target="_blank" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                         <a href="https://twitter.com/varshil" target="_blank" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
